@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat in realTime</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <form id="chat">
+        <select name="nickname">
+            <option>Francisco do mar</option>
+            <option>André cabeça de cotonete</option>
+            <option>Wartelon pé no saco</option>
+            <option>Fulano</option>
+          </select>
+        <div class="messages"></div>
+        <input type="text" name="message" placeholder="Digite sua mensagem">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src="/src/controller.js"></script>
+    <script src="/src/index.js"></script>
+
+</body>
+</html>
